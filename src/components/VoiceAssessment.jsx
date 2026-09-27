@@ -320,7 +320,7 @@ export default function VoiceAssessment({ onComplete, onNavigateToCenters }) {
     messagesStateRef.current = updatedMessages;
 
     try {
-      const response = await fetch("http://localhost:3001/api/chat", {
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
