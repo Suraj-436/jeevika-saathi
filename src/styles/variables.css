@@ -1,0 +1,93 @@
+:root {
+  /* ==========================================================================
+     NATIONAL PORTAL OF INDIA (india.gov.in) — $10,000 DESIGN SYSTEM
+     ========================================================================== */
+
+  /* Monumental Hero & Government Blues */
+  --govt-navy-deep: #06111f;
+  --govt-navy: #0b1c34;
+  --govt-navy-medium: #11284b;
+  --govt-blue: #00337a;
+  --govt-blue-light: #004aa0;
+  --govt-blue-accent: #1e5ba8;
+  --govt-sky: #e8f0fe;
+
+  /* Signature india.gov.in Red / Crimson Accent (Online Services Bar) */
+  --govt-red: #c62828;
+  --govt-red-hover: #b71c1c;
+  --govt-red-dark: #8e0000;
+  --govt-red-light: #ffebee;
+
+  /* Indian Tricolour Palette */
+  --tricolour-saffron: #FF9933;
+  --tricolour-saffron-dark: #e67e17;
+  --tricolour-white: #FFFFFF;
+  --tricolour-green: #138808;
+  --tricolour-green-dark: #0e6506;
+  --tricolour-green-light: #e8f5e9;
+
+  /* Royal Amber / Ashoka Gold */
+  --gold-primary: #d4af37;
+  --gold-glow: #fcd34d;
+  --gold-light: #fef3c7;
+  --gold-dark: #b45309;
+
+  /* Neutrals & Surfaces */
+  --background: #f4f6f9;
+  --surface-white: #ffffff;
+  --surface-card: #ffffff;
+  --surface-subtle: #f8fafc;
+  --surface-hover: #edf2f7;
+
+  /* Text & Hierarchy */
+  --text-dark: #0f172a;
+  --text-primary: #0f172a;
+  --text-main: #0f172a;
+  --text-body: #334155;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  --text-on-dark: #ffffff;
+
+  /* Borders & Dividers */
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+  --border-subtle: #cbd5e1;
+  --border-dark: #94a3b8;
+  --border-glass: rgba(255, 255, 255, 0.18);
+
+  /* Shadows (Multi-layered Premium Fintech & Govtech standard) */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 6px 16px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 28px -4px rgba(15, 23, 42, 0.12), 0 4px 10px -2px rgba(15, 23, 42, 0.06);
+  --shadow-xl: 0 24px 48px -8px rgba(15, 23, 42, 0.16), 0 8px 18px -4px rgba(15, 23, 42, 0.08);
+  --shadow-glow-saffron: 0 0 24px rgba(255, 153, 51, 0.35);
+  --shadow-glow-red: 0 0 20px rgba(198, 40, 40, 0.35);
+
+  /* Typography */
+  --font-sans: 'Noto Sans', Arial, sans-serif;
+  --font-serif: 'Merriweather', Georgia, serif;
+  --font-display: 'Cinzel', serif;
+  --font-devanagari: 'Noto Sans Devanagari', 'Noto Sans', Arial, sans-serif;
+
+  /* Layout dimensions */
+  --max-width: 1360px;
+  --header-height: 80px;
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 16px;
+  --border-radius-pill: 9999px;
+
+  /* Backward Compatibility Aliases */
+  --govt-green: var(--govt-navy);
+  --govt-green-hover: var(--govt-navy-deep);
+  --govt-green-light: var(--govt-sky);
+  --gov-navy: var(--govt-navy);
+  --deep-navy: var(--govt-navy-deep);
+  --green: #15803d;
+  --accent-teal: #0284c7;
+  --accent-mint: #dcf5e7;
+  --accent-mint-text: #15803d;
+  --sidebar-width: 250px;
+}
