@@ -25,6 +25,8 @@ app.use(cors({
   origin: (origin, cb) => {
     // Allow requests with no origin (e.g. same-origin in prod)
     if (!origin || allowedOrigins.includes(origin)) return cb(null, true);
+    // Allow Vercel preview and production deployments
+    if (origin.endsWith('.vercel.app')) return cb(null, true);
     cb(new Error('Not allowed by CORS'));
   }
 }));
@@ -80,8 +82,14 @@ app.use((_req, res) => {
   res.status(404).json({ error: 'Not found' });
 });
 
-app.listen(PORT, () => {
-  console.log(`✅ Jeevika Saathi API server running on http://localhost:${PORT}`);
-  console.log(`   OpenRouter key: ${process.env.OPENROUTER_API_KEY ? '✓ configured' : '✗ not set (Demo Mode only)'}`);
-  console.log(`   Model: ${process.env.OPENROUTER_MODEL || 'google/gemini-2.5-flash-lite'}`);
-});
+// Export for Vercel Serverless Functions
+module.exports = app;
+
+// Only listen on a port if not in a serverless environment
+if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`✅ Jeevika Saathi API server running on http://localhost:${PORT}`);
+    console.log(`   OpenRouter key: ${process.env.OPENROUTER_API_KEY ? '✓ configured' : '✗ not set (Demo Mode only)'}`);
+    console.log(`   Model: ${process.env.OPENROUTER_MODEL || 'google/gemini-2.5-flash-lite'}`);
+  });
+}

@@ -542,7 +542,7 @@ export default function Recommendations({ userProfile, onNavigateToCenters, onNa
 
 
   return (
-    <div style={{ maxWidth: "1000px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "24px" }}>
+    <div style={{ maxWidth: "100%", padding: "0 32px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "24px" }}>
 
       {/* 1. Header */}
       <div>

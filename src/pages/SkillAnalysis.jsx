@@ -385,7 +385,7 @@ export default function SkillAnalysis({ userProfile, onStartVoice, onNavigateToR
 
   if (!hasData) {
     return (
-      <div style={{ maxWidth: "1000px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "24px" }}>
+      <div style={{ maxWidth: "100%", padding: "0 32px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "24px" }}>
         <div>
           <h1 style={{ fontSize: "28px", fontWeight: 800, color: "var(--gov-navy)", margin: 0 }}>Skill & Livelihood Analysis</h1>
           <p style={{ fontSize: "14px", color: "var(--text-muted)", marginTop: "4px" }}>Your personalized assessment of existing skills, transferable capabilities, skill gaps and the pathway ahead.</p>
@@ -418,7 +418,7 @@ export default function SkillAnalysis({ userProfile, onStartVoice, onNavigateToR
     analysis.empPref && analysis.empPref.toLowerCase().includes("self") ? "Self-Employment" : "Employment"];
 
   return (
-    <div style={{ maxWidth: "1000px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "24px" }}>
+    <div style={{ maxWidth: "100%", padding: "0 32px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "24px" }}>
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-start", gap: "16px" }}>
         <div>
           <h1 style={{ fontSize: "28px", fontWeight: 800, color: "var(--gov-navy)", margin: 0, lineHeight: 1.2 }}>Skill & Livelihood Analysis</h1>
