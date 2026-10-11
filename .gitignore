@@ -1,0 +1,44 @@
+# Environment files (contains secrets - NEVER commit)
+.env
+.env.*
+!.env.example
+.env.example
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+*.local
+
+# IDE and Editor artifacts
+.idea/
+.vscode/
+.kilo/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs and debug files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary and executable artifacts
+*.exe
+tmp_check.exe
+tmp/
+temp/

@@ -1,0 +1,5840 @@
+{
+  "users": {
+    "test-ben-1": {
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_plumbing_1789755348318",
+          "userId": "test-ben-1",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-18T18:15:48.318Z",
+          "completedAt": "2026-09-18T18:15:48.318Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "plumbing": {
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "verifiedAt": "2026-09-18T18:15:48.318Z",
+          "assessmentId": "sa_plumbing_1789755348318"
+        }
+      }
+    },
+    "test-ben-fail": {
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_plumbing_1789755357662",
+          "userId": "test-ben-fail",
+          "trade": "plumbing",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 38,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 50,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (60%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-18T18:15:57.662Z",
+          "completedAt": "2026-09-18T18:15:57.662Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": false,
+              "selected": "opt_hammer"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "plumbing": {
+          "status": "TRAINING_RECOMMENDED",
+          "score": 38,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 50,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "lastAttemptAt": "2026-09-18T18:15:57.662Z"
+        }
+      }
+    },
+    "test-user-va": {
+      "voiceAssessment": {
+        "status": "COMPLETED",
+        "completedAt": "2026-09-18T18:24:56.699Z",
+        "updatedAt": "2026-09-18T18:24:56.699Z",
+        "data": {
+          "current_occupation": "Farmer",
+          "existing_skills": [
+            "Pump repair"
+          ],
+          "interests": [
+            "Plumbing"
+          ]
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "test-fake": {
+      "voiceAssessment": {
+        "status": "NOT_STARTED",
+        "completedAt": null,
+        "updatedAt": "2026-09-18T18:25:05.381Z",
+        "data": {}
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "test-beneficiary-1": {
+      "voiceAssessment": {
+        "status": "COMPLETED",
+        "completedAt": "2026-09-18T18:32:18.179Z",
+        "updatedAt": "2026-09-18T18:32:18.179Z",
+        "data": {
+          "current_occupation": "Unskilled helper",
+          "interests": [
+            "Plumbing"
+          ],
+          "career_aspiration": "Sanitary Plumber",
+          "existing_skills": [
+            "Basic pipe fitting"
+          ],
+          "training_availability_duration": "2 Months",
+          "mobility_limit_km": 15,
+          "district": "Barabanki"
+        }
+      },
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_plumbing_1789756338187",
+          "userId": "test-beneficiary-1",
+          "trade": "plumbing",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (60%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-18T18:32:18.187Z",
+          "completedAt": "2026-09-18T18:32:18.187Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1789756355826",
+          "userId": "test-beneficiary-1",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-18T18:32:35.826Z",
+          "completedAt": "2026-09-18T18:32:35.826Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "plumbing": {
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "verifiedAt": "2026-09-18T18:32:35.826Z",
+          "assessmentId": "sa_plumbing_1789756355826"
+        }
+      }
+    },
+    "ben-123": {
+      "voiceAssessment": {
+        "status": "COMPLETED",
+        "completedAt": "2026-09-18T18:39:32.926Z",
+        "updatedAt": "2026-09-19T04:42:40.174Z",
+        "data": {
+          "current_occupation": "Carpenter",
+          "currentOccupation": "Carpenter",
+          "full_name": "Ramesh",
+          "fullName": "Ramesh",
+          "family_occupation": "None",
+          "familyOccupation": "None",
+          "existing_skills": [
+            "general farming skills",
+            "carpentry"
+          ],
+          "existingSkills": [
+            "general farming skills",
+            "carpentry"
+          ],
+          "career_aspiration": "Wage employment under someone",
+          "careerAspiration": "Wage employment under someone",
+          "employment_preference": "Wage employment",
+          "employmentPreference": "Wage employment",
+          "training_availability": "Available",
+          "trainingAvailability": "Available",
+          "training_availability_duration": "1 month",
+          "trainingAvailabilityDuration": "1 month",
+          "mobility_limit_km": 10,
+          "mobilityLimitKm": 10,
+          "training_schedule": "Full-time",
+          "trainingSchedule": "Full-time"
+        }
+      },
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_plumbing_1789788081438",
+          "userId": "ben-123",
+          "trade": "plumbing",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 13,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 50,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (60%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-19T03:21:21.438Z",
+          "completedAt": "2026-09-19T03:21:21.438Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": false,
+              "selected": "claw_hammer"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "apply_cloth"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "paper_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": false,
+              "selected": "flip_flops"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "plumbing": {
+          "status": "TRAINING_RECOMMENDED",
+          "score": 13,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 50,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "lastAttemptAt": "2026-09-19T03:21:21.438Z"
+        }
+      }
+    },
+    "test-user": {
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_farming_1789757986012",
+          "userId": "test-user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-18T18:59:46.011Z",
+          "completedAt": "2026-09-18T18:59:46.011Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "farming": {
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "verifiedAt": "2026-09-18T18:59:46.011Z",
+          "assessmentId": "sa_farming_1789757986012"
+        }
+      }
+    },
+    "test-voice": {
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_farming_1789758009381",
+          "userId": "test-voice",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-18T19:00:09.380Z",
+          "completedAt": "2026-09-18T19:00:09.380Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "water and nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "check safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "weeding"
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "farming": {
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "verifiedAt": "2026-09-18T19:00:09.380Z",
+          "assessmentId": "sa_farming_1789758009381"
+        }
+      }
+    },
+    "test": {
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_plumbing_1789758023324",
+          "userId": "test",
+          "trade": "plumbing",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (60%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-18T19:00:23.322Z",
+          "completedAt": "2026-09-18T19:00:23.322Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1789758023336",
+          "userId": "test",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-18T19:00:23.336Z",
+          "completedAt": "2026-09-18T19:00:23.336Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": null
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_carpentry_1789758023338",
+          "userId": "test",
+          "trade": "carpentry",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (60%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-18T19:00:23.338Z",
+          "completedAt": "2026-09-18T19:00:23.338Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "carp_q1",
+              "competency": "toolRecognition",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "carp_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "carp_q3",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "carp_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "carp_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_tailoring_1789758023340",
+          "userId": "test",
+          "trade": "tailoring",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (50%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-18T19:00:23.340Z",
+          "completedAt": "2026-09-18T19:00:23.340Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "tail_q1",
+              "competency": "toolRecognition",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "tail_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "tail_q3",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "tail_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "tail_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_masonry_1789758023342",
+          "userId": "test",
+          "trade": "masonry",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (65%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-18T19:00:23.342Z",
+          "completedAt": "2026-09-18T19:00:23.342Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "maso_q1",
+              "competency": "toolRecognition",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "maso_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "maso_q3",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "maso_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "maso_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": null
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1789758023344",
+          "userId": "test",
+          "trade": "farming",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (60%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-18T19:00:23.344Z",
+          "completedAt": "2026-09-18T19:00:23.344Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": null
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": false,
+              "selected": null
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "plumbing": {
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "lastAttemptAt": "2026-09-18T19:00:23.322Z"
+        },
+        "electrician": {
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "lastAttemptAt": "2026-09-18T19:00:23.336Z"
+        },
+        "carpentry": {
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "lastAttemptAt": "2026-09-18T19:00:23.338Z"
+        },
+        "tailoring": {
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "lastAttemptAt": "2026-09-18T19:00:23.340Z"
+        },
+        "masonry": {
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "lastAttemptAt": "2026-09-18T19:00:23.342Z"
+        },
+        "farming": {
+          "status": "TRAINING_RECOMMENDED",
+          "score": 0,
+          "competencies": {
+            "toolRecognition": 0,
+            "basicKnowledge": 0,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 0
+          },
+          "lastAttemptAt": "2026-09-18T19:00:23.344Z"
+        }
+      }
+    },
+    "test_elec_user": {
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_electrician_1790502059217",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-27T09:40:59.216Z",
+          "completedAt": "2026-09-27T09:40:59.216Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790573906418",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T05:38:26.418Z",
+          "completedAt": "2026-09-28T05:38:26.418Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790574377593",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T05:46:17.592Z",
+          "completedAt": "2026-09-28T05:46:17.592Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790574407478",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T05:46:47.478Z",
+          "completedAt": "2026-09-28T05:46:47.478Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790575226101",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T06:00:26.100Z",
+          "completedAt": "2026-09-28T06:00:26.100Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790576091952",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T06:14:51.951Z",
+          "completedAt": "2026-09-28T06:14:51.951Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790576157189",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T06:15:57.187Z",
+          "completedAt": "2026-09-28T06:15:57.187Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790578528772",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T06:55:28.771Z",
+          "completedAt": "2026-09-28T06:55:28.771Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790586962859",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T09:16:02.856Z",
+          "completedAt": "2026-09-28T09:16:02.856Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790587661234",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T09:27:41.233Z",
+          "completedAt": "2026-09-28T09:27:41.233Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790588588443",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T09:43:08.442Z",
+          "completedAt": "2026-09-28T09:43:08.442Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790588772169",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T09:46:12.166Z",
+          "completedAt": "2026-09-28T09:46:12.166Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790595452632",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T11:37:32.631Z",
+          "completedAt": "2026-09-28T11:37:32.631Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790595515198",
+          "userId": "test_elec_user",
+          "trade": "electrician",
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 0,
+          "passed": false,
+          "notes": "Safety awareness threshold (75%) not met (Scored: 0%). Safety training recommended before reassessment.",
+          "attemptedAt": "2026-09-28T11:38:35.197Z",
+          "completedAt": "2026-09-28T11:38:35.197Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": false,
+              "selected": "opt_wrong"
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "electrician": {
+          "status": "TRAINING_RECOMMENDED",
+          "score": 65,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 0,
+            "scenarioUnderstanding": 100
+          },
+          "lastAttemptAt": "2026-09-28T11:38:35.197Z"
+        }
+      }
+    },
+    "test_elec_pass": {
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_electrician_1790502059217",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-27T09:40:59.217Z",
+          "completedAt": "2026-09-27T09:40:59.217Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790573906419",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T05:38:26.418Z",
+          "completedAt": "2026-09-28T05:38:26.418Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790574377593",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T05:46:17.593Z",
+          "completedAt": "2026-09-28T05:46:17.593Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790574407479",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T05:46:47.479Z",
+          "completedAt": "2026-09-28T05:46:47.479Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790575226101",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:00:26.101Z",
+          "completedAt": "2026-09-28T06:00:26.101Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790576091952",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:14:51.952Z",
+          "completedAt": "2026-09-28T06:14:51.952Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790576157189",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:15:57.189Z",
+          "completedAt": "2026-09-28T06:15:57.189Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790578528772",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:55:28.772Z",
+          "completedAt": "2026-09-28T06:55:28.772Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790586962859",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:16:02.859Z",
+          "completedAt": "2026-09-28T09:16:02.859Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790587661235",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:27:41.235Z",
+          "completedAt": "2026-09-28T09:27:41.235Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790588588443",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:43:08.443Z",
+          "completedAt": "2026-09-28T09:43:08.443Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790588772169",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:46:12.169Z",
+          "completedAt": "2026-09-28T09:46:12.169Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790595452632",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:37:32.632Z",
+          "completedAt": "2026-09-28T11:37:32.632Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_electrician_1790595515199",
+          "userId": "test_elec_pass",
+          "trade": "electrician",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for electrician (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:38:35.199Z",
+          "completedAt": "2026-09-28T11:38:35.199Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "elec_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_neon_tester"
+            },
+            {
+              "questionId": "elec_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_turn_off_mcb"
+            },
+            {
+              "questionId": "elec_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_red_black_green"
+            },
+            {
+              "questionId": "elec_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_remove_overload"
+            },
+            {
+              "questionId": "elec_q5",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_rubber_gloves"
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "electrician": {
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "verifiedAt": "2026-09-28T11:38:35.199Z",
+          "assessmentId": "sa_electrician_1790595515199"
+        }
+      }
+    },
+    "test_farm_user": {
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_farming_1790502059217",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-27T09:40:59.217Z",
+          "completedAt": "2026-09-27T09:40:59.217Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790573906419",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T05:38:26.419Z",
+          "completedAt": "2026-09-28T05:38:26.419Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790574377594",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T05:46:17.594Z",
+          "completedAt": "2026-09-28T05:46:17.594Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790574407479",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T05:46:47.479Z",
+          "completedAt": "2026-09-28T05:46:47.479Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790575226101",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:00:26.101Z",
+          "completedAt": "2026-09-28T06:00:26.101Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790576091952",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:14:51.952Z",
+          "completedAt": "2026-09-28T06:14:51.952Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790576157189",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:15:57.189Z",
+          "completedAt": "2026-09-28T06:15:57.189Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790578528772",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:55:28.772Z",
+          "completedAt": "2026-09-28T06:55:28.772Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790586962859",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:16:02.859Z",
+          "completedAt": "2026-09-28T09:16:02.859Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790587661235",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:27:41.235Z",
+          "completedAt": "2026-09-28T09:27:41.235Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790588588443",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:43:08.443Z",
+          "completedAt": "2026-09-28T09:43:08.443Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790588772169",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:46:12.169Z",
+          "completedAt": "2026-09-28T09:46:12.169Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790595452632",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:37:32.632Z",
+          "completedAt": "2026-09-28T11:37:32.632Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_farming_1790595515199",
+          "userId": "test_farm_user",
+          "trade": "farming",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for farming (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:38:35.199Z",
+          "completedAt": "2026-09-28T11:38:35.199Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "farm_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_hoe"
+            },
+            {
+              "questionId": "farm_q2",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_water_nutrients"
+            },
+            {
+              "questionId": "farm_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_support_growth"
+            },
+            {
+              "questionId": "farm_q4",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_check_safety"
+            },
+            {
+              "questionId": "farm_q5",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_weeding_mulching"
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "farming": {
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "verifiedAt": "2026-09-28T11:38:35.199Z",
+          "assessmentId": "sa_farming_1790595515199"
+        }
+      }
+    },
+    "test_va_user_1": {
+      "voiceAssessment": {
+        "status": "COMPLETED",
+        "completedAt": "2026-09-28T11:38:35.199Z",
+        "updatedAt": "2026-09-28T11:38:35.199Z",
+        "data": {
+          "full_name": "Verified Test Beneficiary",
+          "current_occupation": "Farmer",
+          "existing_skills": [
+            "irrigation",
+            "dairy"
+          ],
+          "career_aspiration": "Dairy Unit Owner"
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "ben_9876500001": {
+      "skillAssessments": [
+        {
+          "assessmentId": "sa_plumbing_1790502060123",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-27T09:41:00.123Z",
+          "completedAt": "2026-09-27T09:41:00.123Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790504401006",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-27T10:20:01.006Z",
+          "completedAt": "2026-09-27T10:20:01.006Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790504774980",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-27T10:26:14.980Z",
+          "completedAt": "2026-09-27T10:26:14.980Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790505733967",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-27T10:42:13.967Z",
+          "completedAt": "2026-09-27T10:42:13.967Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790506088707",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-27T10:48:08.707Z",
+          "completedAt": "2026-09-27T10:48:08.707Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790506661613",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-27T10:57:41.613Z",
+          "completedAt": "2026-09-27T10:57:41.613Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790573909467",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T05:38:29.467Z",
+          "completedAt": "2026-09-28T05:38:29.467Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790574378308",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T05:46:18.308Z",
+          "completedAt": "2026-09-28T05:46:18.308Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790574408196",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T05:46:48.196Z",
+          "completedAt": "2026-09-28T05:46:48.196Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790575226888",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:00:26.888Z",
+          "completedAt": "2026-09-28T06:00:26.888Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790576139032",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:15:39.032Z",
+          "completedAt": "2026-09-28T06:15:39.032Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790576158134",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:15:58.134Z",
+          "completedAt": "2026-09-28T06:15:58.134Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790576972765",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:29:32.765Z",
+          "completedAt": "2026-09-28T06:29:32.765Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790577212778",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T06:33:32.778Z",
+          "completedAt": "2026-09-28T06:33:32.778Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790579184284",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T07:06:24.284Z",
+          "completedAt": "2026-09-28T07:06:24.284Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790579206571",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T07:06:46.571Z",
+          "completedAt": "2026-09-28T07:06:46.571Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790579611192",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T07:13:31.192Z",
+          "completedAt": "2026-09-28T07:13:31.192Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790580833742",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T07:33:53.742Z",
+          "completedAt": "2026-09-28T07:33:53.742Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790581853519",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T07:50:53.519Z",
+          "completedAt": "2026-09-28T07:50:53.519Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790586963520",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:16:03.520Z",
+          "completedAt": "2026-09-28T09:16:03.520Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790587661941",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:27:41.941Z",
+          "completedAt": "2026-09-28T09:27:41.941Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790588589130",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:43:09.130Z",
+          "completedAt": "2026-09-28T09:43:09.130Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790588772871",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T09:46:12.871Z",
+          "completedAt": "2026-09-28T09:46:12.871Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790589692616",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T10:01:32.616Z",
+          "completedAt": "2026-09-28T10:01:32.616Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790591958640",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T10:39:18.640Z",
+          "completedAt": "2026-09-28T10:39:18.640Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790592198822",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T10:43:18.822Z",
+          "completedAt": "2026-09-28T10:43:18.822Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790592489270",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T10:48:09.270Z",
+          "completedAt": "2026-09-28T10:48:09.270Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790592962701",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T10:56:02.701Z",
+          "completedAt": "2026-09-28T10:56:02.701Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790593617522",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:06:57.522Z",
+          "completedAt": "2026-09-28T11:06:57.522Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790593650089",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:07:30.089Z",
+          "completedAt": "2026-09-28T11:07:30.089Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790595453340",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:37:33.340Z",
+          "completedAt": "2026-09-28T11:37:33.340Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790595515883",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:38:35.883Z",
+          "completedAt": "2026-09-28T11:38:35.883Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790596504957",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:55:04.957Z",
+          "completedAt": "2026-09-28T11:55:04.957Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790596661949",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:57:41.949Z",
+          "completedAt": "2026-09-28T11:57:41.949Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790596677846",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T11:57:57.846Z",
+          "completedAt": "2026-09-28T11:57:57.846Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        },
+        {
+          "assessmentId": "sa_plumbing_1790597173242",
+          "userId": "ben_9876500001",
+          "trade": "plumbing",
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "safetyScore": 100,
+          "passed": true,
+          "notes": "Successfully verified competencies for plumbing (Overall: 100%, Safety: 100%). Eligible for verified opportunities.",
+          "attemptedAt": "2026-09-28T12:06:13.242Z",
+          "completedAt": "2026-09-28T12:06:13.242Z",
+          "assessmentVersion": "1.0",
+          "breakdown": [
+            {
+              "questionId": "plumb_q1",
+              "competency": "toolRecognition",
+              "isCorrect": true,
+              "selected": "opt_pipe_wrench"
+            },
+            {
+              "questionId": "plumb_q2",
+              "competency": "safetyAwareness",
+              "isCorrect": true,
+              "selected": "opt_shutoff"
+            },
+            {
+              "questionId": "plumb_q3",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_teflon_tape"
+            },
+            {
+              "questionId": "plumb_q4",
+              "competency": "scenarioUnderstanding",
+              "isCorrect": true,
+              "selected": "opt_replace_washer"
+            },
+            {
+              "questionId": "plumb_q5",
+              "competency": "basicKnowledge",
+              "isCorrect": true,
+              "selected": "opt_pvc_solvent"
+            }
+          ]
+        }
+      ],
+      "verifiedSkills": {
+        "plumbing": {
+          "status": "VERIFIED",
+          "score": 100,
+          "competencies": {
+            "toolRecognition": 100,
+            "basicKnowledge": 100,
+            "safetyAwareness": 100,
+            "scenarioUnderstanding": 100
+          },
+          "verifiedAt": "2026-09-28T12:06:13.242Z",
+          "assessmentId": "sa_plumbing_1790597173242"
+        }
+      }
+    },
+    "ben_live_test_user": {
+      "profile": {
+        "name": "Aarav Verma",
+        "age": 22,
+        "district": "Lucknow",
+        "state": "Uttar Pradesh",
+        "aspiration": "Electrician",
+        "full_name": "Aarav Verma",
+        "career_aspiration": "Electrician",
+        "districtState": "Lucknow, Uttar Pradesh",
+        "updatedAt": "2026-09-27T10:25:18.121Z"
+      },
+      "voiceAssessment": {
+        "status": "NOT_STARTED",
+        "completedAt": null,
+        "data": {
+          "full_name": "Aarav Verma",
+          "career_aspiration": "Electrician"
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "ben_9565656456": {
+      "voiceAssessment": {
+        "status": "IN_PROGRESS",
+        "completedAt": null,
+        "updatedAt": "2026-09-27T10:58:19.898Z",
+        "data": {
+          "current_occupation": "Carpenter",
+          "currentOccupation": "Carpenter",
+          "full_name": "Suraj",
+          "fullName": "Suraj",
+          "existing_skills": [
+            "woodworking",
+            "measuring"
+          ],
+          "existingSkills": [
+            "woodworking",
+            "measuring"
+          ],
+          "mobility_limit_km": 25,
+          "mobilityLimitKm": 25,
+          "training_schedule": "Full-time",
+          "trainingSchedule": "Full-time"
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "ben_test_suraj": {
+      "voiceAssessment": {
+        "status": "IN_PROGRESS",
+        "completedAt": null,
+        "updatedAt": "2026-09-27T10:57:33.736Z",
+        "data": {
+          "full_name": "Suraj",
+          "fullName": "Suraj",
+          "current_occupation": "Labour",
+          "currentOccupation": "Labour"
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "ben_9676665766": {
+      "voiceAssessment": {
+        "status": "NOT_STARTED",
+        "completedAt": null,
+        "updatedAt": "2026-09-27T16:40:56.461Z",
+        "data": {}
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "ben_9346756389": {
+      "voiceAssessment": {
+        "status": "COMPLETED",
+        "completedAt": "2026-09-27T16:45:03.333Z",
+        "updatedAt": "2026-09-27T16:45:03.333Z",
+        "data": {
+          "current_occupation": "Software developer",
+          "currentOccupation": "Software developer",
+          "existing_skills": [
+            "Software development",
+            "App development",
+            "App Development",
+            "app development"
+          ],
+          "existingSkills": [
+            "Software development",
+            "App development",
+            "App Development",
+            "app development"
+          ],
+          "family_occupation": "None",
+          "familyOccupation": "None",
+          "career_aspiration": "Looking for a job",
+          "careerAspiration": "Looking for a job",
+          "employment_preference": "Wage employment",
+          "employmentPreference": "Wage employment",
+          "mobility_limit_km": 20,
+          "mobilityLimitKm": 20,
+          "training_availability": "Available",
+          "trainingAvailability": "Available",
+          "training_availability_duration": "3 months",
+          "trainingAvailabilityDuration": "3 months",
+          "training_schedule": "Full-time",
+          "trainingSchedule": "Full-time"
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "ben_test_profile_user_1": {
+      "profile": {
+        "name": "Priya Sharma",
+        "age": 24,
+        "gender": "Female",
+        "district": "Varanasi",
+        "state": "Uttar Pradesh",
+        "skills": [
+          "Tailoring",
+          "Embroidery"
+        ],
+        "aspiration": "Boutique Owner",
+        "employmentPref": "Self-Employment / Micro-Enterprise",
+        "full_name": "Priya Sharma",
+        "career_aspiration": "Boutique Owner",
+        "employment_preference": "Self-Employment / Micro-Enterprise",
+        "districtState": "Varanasi, Uttar Pradesh",
+        "updatedAt": "2026-09-28T11:38:35.202Z"
+      },
+      "voiceAssessment": {
+        "status": "NOT_STARTED",
+        "completedAt": null,
+        "data": {
+          "full_name": "Priya Sharma",
+          "career_aspiration": "Boutique Owner",
+          "employment_preference": "Self-Employment / Micro-Enterprise",
+          "existing_skills": [
+            "Tailoring",
+            "Embroidery"
+          ]
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "ben_9986754321": {
+      "voiceAssessment": {
+        "status": "IN_PROGRESS",
+        "completedAt": null,
+        "updatedAt": "2026-09-28T10:13:02.125Z",
+        "data": {
+          "current_occupation": "Labour",
+          "currentOccupation": "Labour",
+          "full_name": "Suraj",
+          "fullName": "Suraj",
+          "mobility_limit_km": 25,
+          "mobilityLimitKm": 25,
+          "training_schedule": "Full-time",
+          "trainingSchedule": "Full-time"
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "ben_9866554447": {
+      "voiceAssessment": {
+        "status": "IN_PROGRESS",
+        "completedAt": null,
+        "updatedAt": "2026-09-28T10:17:47.407Z",
+        "data": {
+          "current_occupation": "मजदूर",
+          "currentOccupation": "मजदूर",
+          "family_occupation": "कोई नहीं",
+          "familyOccupation": "कोई नहीं",
+          "interests": [
+            "बिजली का काम",
+            "रिपेयर"
+          ],
+          "career_aspiration": "रिपेयर का काम सीखना",
+          "careerAspiration": "रिपेयर का काम सीखना",
+          "mobility_limit_km": 25,
+          "mobilityLimitKm": 25,
+          "training_schedule": "Full-time",
+          "trainingSchedule": "Full-time"
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "ben_8654321052": {
+      "voiceAssessment": {
+        "status": "IN_PROGRESS",
+        "completedAt": null,
+        "updatedAt": "2026-09-28T11:10:08.959Z",
+        "data": {
+          "current_occupation": "Software developer",
+          "currentOccupation": "Software developer",
+          "full_name": "Suraj",
+          "fullName": "Suraj"
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "test_ben_workflow_new_1001": {
+      "profile": {
+        "completion": 0
+      },
+      "voiceAssessment": {
+        "status": "NOT_STARTED",
+        "completedAt": null,
+        "updatedAt": "2026-09-28T12:06:14.642Z",
+        "data": {}
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "test_ben_workflow_comp_1002": {
+      "profile": {
+        "completion": 0,
+        "name": "Ramesh Kumar",
+        "currentLivelihood": "Solar Pump Assistant",
+        "aspiration": "Certified Solar PV Technician",
+        "employmentPref": "Self-Employment",
+        "skills": [
+          "Solar wiring",
+          "DC inverter basics",
+          "Panel mounting"
+        ],
+        "interests": [
+          "electrical",
+          "electronics"
+        ],
+        "tradOccupation": "Farming",
+        "district": "Agra, Uttar Pradesh",
+        "mobility_limit_km": 25,
+        "trainingAvailabilityDuration": "2 months",
+        "trainingSchedule": "Full-time"
+      },
+      "voiceAssessment": {
+        "status": "NOT_STARTED",
+        "completedAt": null,
+        "updatedAt": "2026-09-28T12:06:14.642Z",
+        "data": {}
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "test_ben_workflow_inc_1003": {
+      "profile": {
+        "completion": 0,
+        "name": "Interrupted User",
+        "currentLivelihood": "Day Laborer"
+      },
+      "voiceAssessment": {
+        "status": "NOT_STARTED",
+        "completedAt": null,
+        "updatedAt": "2026-09-28T12:06:14.642Z",
+        "data": {}
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "test_ben_workflow_retake_1004": {
+      "profile": {
+        "completion": 0,
+        "currentLivelihood": "Mobile Repair Shop Helper",
+        "aspiration": "Computer Hardware Technician",
+        "skills": [
+          "Soldering",
+          "Screen replacement"
+        ],
+        "interests": [
+          "computer_repair"
+        ]
+      },
+      "voiceAssessment": {
+        "status": "NOT_STARTED",
+        "completedAt": null,
+        "updatedAt": "2026-09-28T12:06:14.642Z",
+        "data": {}
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {}
+    },
+    "test_ghost_user_99": {
+      "voiceAssessment": {
+        "status": "NOT_STARTED",
+        "completedAt": null,
+        "updatedAt": "2026-09-28T12:06:14.606Z",
+        "data": {}
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {},
+      "profile": {}
+    },
+    "ben_7321674236": {
+      "voiceAssessment": {
+        "status": "COMPLETED",
+        "completedAt": "2026-09-29T13:38:34.931Z",
+        "updatedAt": "2026-09-29T13:38:34.956Z",
+        "data": {
+          "current_occupation": "Technical support",
+          "currentOccupation": "Technical support",
+          "family_occupation": "Dependent on beneficiary",
+          "familyOccupation": "Dependent on beneficiary",
+          "existing_skills": [
+            "Computer hardware",
+            "computer hardware"
+          ],
+          "existingSkills": [
+            "Computer hardware",
+            "computer hardware"
+          ],
+          "career_aspiration": "Find a job",
+          "careerAspiration": "Find a job",
+          "employment_preference": "Wage employment",
+          "employmentPreference": "Wage employment",
+          "mobility_limit_km": 20,
+          "mobilityLimitKm": 20,
+          "training_availability": "Available",
+          "trainingAvailability": "Available",
+          "training_availability_duration": "3 months",
+          "trainingAvailabilityDuration": "3 months",
+          "interests": [
+            "electrician",
+            "Electrician"
+          ],
+          "training_schedule": "Weekends",
+          "trainingSchedule": "Weekends"
+        }
+      },
+      "skillAssessments": [],
+      "verifiedSkills": {},
+      "profile": {
+        "currentLivelihood": "Technical support",
+        "tradOccupation": "Dependent on beneficiary",
+        "skills": [
+          "Computer hardware",
+          "computer hardware"
+        ],
+        "aspiration": "Find a job",
+        "employmentPref": "Wage employment",
+        "mobility_limit_km": 20,
+        "trainingAvailabilityDuration": "3 months",
+        "interests": [
+          "electrician",
+          "Electrician"
+        ],
+        "trainingSchedule": "Weekends",
+        "completion": 100
+      }
+    }
+  },
+  "reservations": [
+    {
+      "reservationId": "PMAJAY-RES-059225",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-27T09:40:59.225Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-060127",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-27T09:41:00.127Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-401010",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-27T10:20:01.010Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-774983",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-27T10:26:14.983Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-733978",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-27T10:42:13.978Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-088711",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-27T10:48:08.711Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-661616",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-27T10:57:41.616Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-906420",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T05:38:26.420Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-909471",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T05:38:29.471Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-377596",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T05:46:17.596Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-378312",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T05:46:18.312Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-407481",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T05:46:47.481Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-408200",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T05:46:48.200Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-226103",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T06:00:26.103Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-226892",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T06:00:26.892Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-091954",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T06:14:51.954Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-139038",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T06:15:39.038Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-157193",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T06:15:57.193Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-158139",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T06:15:58.139Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-972768",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T06:29:32.768Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-528775",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T06:55:28.775Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-184288",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T07:06:24.288Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-206574",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T07:06:46.574Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-611195",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T07:13:31.195Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-833747",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T07:33:53.747Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-853525",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T07:50:53.525Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-962863",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T09:16:02.863Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-963527",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T09:16:03.527Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-661240",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T09:27:41.240Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-661951",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T09:27:41.951Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-588447",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T09:43:08.447Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-589136",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T09:43:09.136Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-772174",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T09:46:12.174Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-772877",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T09:46:12.877Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-692625",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T10:01:32.625Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-958647",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T10:39:18.647Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-198829",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T10:43:18.829Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-489276",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T10:48:09.276Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-962707",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T10:56:02.707Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-617531",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T11:06:57.531Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-650095",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T11:07:30.095Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-452639",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T11:37:32.639Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-453349",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T11:37:33.349Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-515202",
+      "userId": "test_res_user",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Solar Domestic Electrician",
+      "phone": "+91 98765 43210",
+      "reservedAt": "2026-09-28T11:38:35.202Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-515892",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T11:38:35.892Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-504964",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T11:55:04.964Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-661957",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T11:57:41.957Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-677858",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T11:57:57.858Z",
+      "status": "CONFIRMED_DEMO"
+    },
+    {
+      "reservationId": "PMAJAY-RES-173249",
+      "userId": "ben_9876500001",
+      "centerId": "center-pmkk-agra",
+      "centerName": "PMKK Agra Central",
+      "trade": "Plumbing",
+      "phone": "9876500001",
+      "reservedAt": "2026-09-28T12:06:13.249Z",
+      "status": "CONFIRMED_DEMO"
+    }
+  ]
+}
